@@ -12,14 +12,10 @@ A simple tool to extract tweets, load them into a MongoDB instance and export th
 3. Create an account on http://dev.twitter.com and get your API keys
    You would need 4 parameters - consumer key, consumer secret, access token & access token secret
    
-4. Run the Twitter + MongoDB + CSV.py script and input the desired Twitter Handle or Hashtag
-
-![Python Shell Screenshot](images/img1.png)
-
+4. Run the Twitter + MongoDB + CSV.py script and input the desired Twitter Handle or Hashtag                                     ![Python Shell Screenshot](images/img1.png)
 5. Voila! Done! The script will extract a maximum of ~3000 tweets of the specified user or hashtag
    and load it into a new collection on the MongoDB instance. It will then export this data into a
    CSV file, using the mongoexport functionality.
-   
 ![CSV Output](images/img2.png)
 
 
