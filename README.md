@@ -1,7 +1,8 @@
 # Twitter-MongoDB-CSV-XLS
-Extract tweets; load them into a MongoDB instance and export them into CSV/XLS format
+A simple tool to extract tweets, load them into a MongoDB instance and export them into CSV/XLS format
 
-<b>How To Use This Tool</b>
+
+<h1>How To Use This Tool</h1>
 
 1. Ensure you have the right version of Python installed (2.7 or higher)
 
@@ -20,3 +21,12 @@ Extract tweets; load them into a MongoDB instance and export them into CSV/XLS f
    CSV file, using the mongoexport functionality.
    
 ![CSV Output](images/img2.png)
+
+
+<h1>How Does It Work</h2>
+
+1. Get the desired twitter handle or hashtag to work with.
+2. Call the Twitter API to extract a maximum of around ~3000 tweets for the specified user/hashtag
+3. Load these 3000 tweets, returned in JSON format into MongoDB
+4. Re-use the "id" field, returned by Twitter, as the primary key (PK) for the MongoDB collection
+5. Invoke the mongoexport functionality, to export the collection to CSV/XLS format
