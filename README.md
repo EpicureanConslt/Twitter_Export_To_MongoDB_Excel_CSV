@@ -30,3 +30,4 @@ A simple tool to extract tweets, load them into a MongoDB instance and export th
 3. Load these 3000 tweets, returned in JSON format into MongoDB
 4. Re-use the "id" field, returned by Twitter, as the primary key (PK) for the MongoDB collection
 5. Invoke the mongoexport functionality, to export the collection to CSV/XLS format
+
