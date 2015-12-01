@@ -1,5 +1,5 @@
 # Twitter-MongoDB-CSV-XLS
-One of the first steps involved in analyzing and visualizing Twitter data, is to collect Twitter data and store it in a easy-to-use format. Here, is a simple tool to extract tweets, load them into a MongoDB instance and export them into CSV/XLS format. You can use the final CSV/XLS file in your analysis or simply connect to the MongoDB instance.
+Here, is a simple tool to extract tweets, load them into a MongoDB instance and export them into CSV/XLS format. You can use the final CSV/XLS file in your analysis or simply connect to the data in JSON format in the MongoDB instance.
 
 
 <h1>How To Use This Tool</h1>
