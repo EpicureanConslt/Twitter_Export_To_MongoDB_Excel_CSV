@@ -9,9 +9,6 @@ from requests_oauthlib import OAuth1
 from subprocess import Popen, PIPE
 
 
-
-
-
 # ========================= Function to change PK to _id =============================================================================================================
 
 #I want to re-use the id field returned by Twitter as the primary key (PK)
@@ -27,9 +24,6 @@ def replaceid(q):
                 new_json[j][new_key] = q[j][key]      #Copy over contents to new json
                 del new_json[j][key]                  #Delete old "id" field & value 
     return new_json
-
-
-
 
 
 # ========================= Twitter & MongoDB Initialization ========================================================================================================
@@ -63,9 +57,6 @@ client = MongoClient("localhost", 27017)                                        
 db = client["TwitterOnMongoDB"]                                                             #My DB is called "TwitterOnMongoDB"
 collection = db[twitter_input]                                                              #Using a collection named the inputted Twitter Handle or Hashtag
 auth=OAuth1(consumer_key, consumer_secret, access_token, access_token_secret)               #Initialize OAuth connection parameters
-
-
-
 
 
 # ========================= Twitter Extraction + MongoDB Loading =====================================================================================================
@@ -104,9 +95,6 @@ for j in range(1,16):
                 url1 = "https://api.twitter.com/1.1/search/tweets.json" + next_results
         #Send subsequent request to Twitter, using the modified URL    
         tweet=requests.get(url1, auth=auth).json()
-
-
-
 
 
 # ========================= Export to CSV =============================================================================================================================
