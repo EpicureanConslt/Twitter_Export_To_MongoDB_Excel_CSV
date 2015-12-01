@@ -16,6 +16,7 @@ One of the first steps involved in analyzing and visualizing Twitter data, is to
 5. Voila! Done! The script will extract a maximum of ~3000 tweets of the specified user or hashtag
    and load it into a new collection on the MongoDB instance. It will then export this data into a
    CSV file, using the mongoexport functionality.                                                                               
+![CSV Output](images/img3.png)
 ![CSV Output](images/img2.png)
 
 
