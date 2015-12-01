@@ -23,6 +23,6 @@ One of the first steps involved in analyzing and visualizing Twitter data, is to
 
 1. Get the desired twitter handle or hashtag to work with.
 2. Call the Twitter API to extract a maximum of around ~3000 tweets for the specified user/hashtag
-3. Load these 3000 tweets, returned in JSON format into MongoDB
+3. Load these ~3000 tweets, returned in JSON format into MongoDB
 4. Re-use the "id" field, returned by Twitter, as the primary key (PK) for the MongoDB collection
 5. Invoke the mongoexport functionality, to export the collection to CSV/XLS format
